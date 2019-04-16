@@ -1,0 +1,168 @@
+@charset "utf-8";
+body{	
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
+	margin: 0;	
+	padding: 0;
+	background-color: rgba(251, 251, 251, 1);
+}
+	
+p{	
+	margin: 0;	
+	padding: 0;
+	font-size: 20px;
+	line-height: 2;
+	color: #555555;
+}
+
+
+.pic{ 
+	width: 90%;
+	max-width: 900px;
+	margin: 25px auto 0 auto;
+}
+
+.sticker{ 
+	width: 350px;
+	margin: 20px auto 0 auto;
+}
+
+.sticker img{
+	width: 50%;
+	float: left;
+	padding: 5px;
+	box-sizing: border-box;
+}
+	
+.appicon{ 
+	width: 150px;
+	padding: 0 ;
+	margin: 0 auto;
+	text-align: center;;
+}
+
+.footer{
+	width: 90%;
+	max-width: 900px;
+	height: 130px;
+	background-color: white;
+	margin: 30px auto;
+	padding: 30px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+
+@media screen and (min-width: 1280px) {
+	
+.main{ 
+	width: 60%; 
+	margin: 0 auto;
+	padding: 100px  0;
+	box-sizing: border-box;
+}
+
+.back{ 
+	width: 60px;
+	position: fixed;
+	top: 30px;
+	right: 40px;
+	z-index: 1;
+}
+
+}
+
+@media screen and (max-width: 1279px) and (min-width: 980px){
+	
+.main{ 
+	width: 60%; 
+	margin: 0 auto;
+	padding: 80px  0;
+	box-sizing: border-box;
+}	
+
+.back{ 
+	width: 60px;
+	position: fixed;
+	top: 30px;
+	right: 40px;
+	z-index: 1;
+}
+
+}	
+
+@media screen and (max-width: 979px) and (min-width: 736px){
+
+.main{ 
+	width: 60%; 
+	margin: 0 auto;
+	padding: 80px  0;
+	box-sizing: border-box;
+}
+
+.back{ 
+	width: 60px;
+	position: fixed;
+	top: 30px;
+	right: 40px;
+	z-index: 1;
+}	
+	
+}	
+	
+@media screen and (max-width: 735px) and (min-width: 480px){
+
+.main{ 
+	width: 60%; 
+	margin: 0 auto;
+	padding: 80px  0;
+	box-sizing: border-box;
+}
+
+.back{ 
+	width: 60px;
+	position: fixed;
+	top: 30px;
+	right: 40px;
+	z-index: 1;
+}
+	
+}	
+
+@media screen and (max-width: 479px) and (min-width: 1px){
+	
+.sticker{ 
+	width: 250px;
+	margin: 10px auto 0 auto;
+}
+
+.sticker img{
+	width: 50%;
+	float: left;
+	padding: 5px;
+	box-sizing: border-box;
+}
+	
+.appicon{ 
+	width: 100px;
+	padding: 0 ;
+	margin: 0 auto;
+}
+
+.main{ 
+	width: 60%; 
+	margin: 0 auto;
+	padding: 50px  0;
+	box-sizing: border-box;
+}
+
+.back{ 
+	width: 60px;
+	position: fixed;
+	top: 30px;
+	right: 10px;
+	z-index: 1;
+}	
+	
+}
+
+

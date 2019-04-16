@@ -1,0 +1,459 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1" />
+
+<title>聯合報系 行動躍進</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/qa.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<!--左右切換-->
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/animate.js"></script>
+
+<!--<script src="js/scroll.js"></script>-->
+
+<script>
+  $(document).ready(function() {
+     $("#owl-demo").owlCarousel({
+        navigation : true,  //Show next and prev buttons
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem: true
+    });
+  });
+
+  $(document).ready(function() {
+     $("#owl").owlCarousel({
+        navigation : true,  //Show next and prev buttons
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem: true
+    });
+  });
+  
+    $(document).ready(function() {
+     $("#owl-demo2").owlCarousel({
+        navigation : true,  //Show next and prev buttons
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem: true
+    });
+  });
+
+  function unhide(divID) {
+  	var divIds = [ "text1", "text2", "text3", "text4","text5", "text6", "text7", "text8","text9", "text10", "text11", "text12","text13", "text14", "text15", "text16","text17", "text18", "text19", "text20"];
+  	for ( var i = 0, len = divIds.length; i < len; i++) {
+  		var item = document.getElementById(divIds[i]);
+  		if (item) {
+  				//$("#"+divIds[i]).css({"opacity":"1.0"});
+  		        //item.className = divD == divIds[i] ? 'unhidden' : 'hidden';
+  			
+  				if(divID == divIds[i] ){
+  				var items = item.parentNode.childNodes;
+  				for(var d in items){
+  				   		
+  				   	if(item != items[d] && items[d].className){
+  				       if(items[d].className.indexOf("hidden")>-1){
+  						 items[d].className='hidden';
+  						}
+  					}
+  				}
+  				item.className  = 'unhidden';
+  				}
+  				//$("#"+divIds[i]).animate( {"opacity":"1.0"} , 1000 );
+  				}}}  
+
+  //menu toggle
+  $(document).on("ready", function(){
+    $('#menu li').click(closeNav);
+  });
+  function openNav() {
+      document.getElementById("toggle").style.left = "80%";
+      document.getElementById("toggle").style.overflow = "auto";
+      document.getElementById("screen-overlay").style.opacity = "100";
+      document.getElementById("screen-overlay").style.display = "block";
+  }
+  function closeNav() {
+      document.getElementById("toggle").style.left = "0%";
+      document.getElementById("toggle").style.overflow = "hidden";
+      document.getElementById("screen-overlay").style.opacity = "0";
+      document.getElementById("screen-overlay").style.display = "none";
+  }
+</script>
+
+<!-- Start google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-19660006-1', 'auto');
+  ga('create', 'UA-19210365-12', 'auto', {'name': 'mobile'});
+  ga('send', 'pageview');
+  ga('mobile.send', 'pageview');
+
+</script>
+<!-- End google analytics -->
+
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "7390954" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+
+   
+
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=7390954&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"aw0Di1a4ZP00aY", domain:"udn.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=aw0Di1a4ZP00aY" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->
+
+</head>
+
+<body>
+
+<!--導覽開始-->
+<div class="screen-overlay" id="screen-overlay"></div>
+<div class="mobile-menu-trigger" onclick="openNav()">
+  <span></span>
+</div>
+<div class="toggle" id="toggle">
+  <div class="menu-toggle" onclick="closeNav()">
+    <span></span>
+  </div>
+  <ul id="menu">
+  	<li><a href="#1Page">首頁</a></li>
+  	<li><a href="#2Page">行動發展3策略</a></li>
+    <li><a href="#3Page">行動腦力測試</a></li>
+    <li><a href="#4Page">新聞VR體驗會</a></li>
+    <li><a href="#5Page">行動趨勢分享會</a></li>
+  </ul>
+</div>
+<!--導覽結束-->
+
+<div class="color"></div>
+<div class="bt">行動領航 智慧決策</div>
+
+<!--首頁開始-->
+<a id="1Page"></a>
+<div id="box1">
+  <div class="item1">
+    <img src="img/title.png" width="100%">
+    <h2>行動腦 M計畫，揭露報系行動發展3策略<br>
+    媒體 X 有價內容 X 虛實整合</h2>
+    <p>在行動M世代中，需要你我共同關注報系行動發展趨勢，開發報系行動腦細胞的無限潛能</p>
+    <div class="arrow wow bounce" data-wow-duration="2s" animation-iteration-count="infinite"><img src="img/arrow.png" width="100%"></div>
+ </div>
+</div>
+<!--首頁結束-->
+
+<!--3策略-->
+<a id="2Page"></a>
+<div id="box2">
+<div id="owl-demo">
+<!--策略一-->
+<div class="item2 wow fadeIn" data-wow-duration="2s">
+    <div class="icon"><img src="img/media.svg" width="100%"></div>
+    <h1>媒體核心</h1>
+    <h2>報系行動發展三大策略之一</h2>
+    <p>永續經營媒體本業，以 udn News 及經濟日報兩大新聞 App 服務，做為行動發展雙旗艦，加上聯合報 Focus、聯合影音，持續優化讀者的行動閱讀體驗</p>
+    <div class="bigappcisone">
+    <div class="appcis">
+    <a href="http://mobile.udn.com/udnnews/" target="_blank"><img src="img/udnnews_icon_1024.png"></a>
+    <p>udn News</p>
+    </div>
+    <div class="appcis">
+    <a href="http://mobile.udn.com/edn/" target="_blank"><img src="img/edn_icon_1024.png"></a>
+    <p>經濟日報</p>
+    </div>
+    <div class="appcis">
+    <a href="http://mobile.udn.com/focus/" target="_blank"><img src="img/focus_1024.png"></a>
+    <p>聯合報 Focus</p>
+    </div>
+    <div class="appcis">
+    <a href="http://mobile.udn.com/video/" target="_blank"><img src="img/video.png"></a>
+    <p>聯合影音</p>
+    </div>
+    </div>
+</div>
+<!--策略二-->
+<div class="item2">
+<div class="icon"><img src="img/qrcode.svg" width="100%"></div>
+    <h1>虛實整合</h1>
+    <h2>報系行動發展三大策略之二</h2>
+	<p>透過行動載具將數位與實體服務串聯在一起。如udn 瘋活動 App，民眾可透過手機直接查看購票資訊，更可於觀展前即時查看展覽排隊狀況，是虛實整合最佳案例。其他包含經濟日報會展系列、去哪鵝、搭車吧，台北、有工作，為了創造虛擬到實體最順暢的使用者體驗</p>
+    <div class="bigappcis">
+    <div class="appcis">
+    <a href="http://mobile.udn.com/uevent/" target="_blank"><img src="img/Android_1024.png"></a>
+    <p>udn 瘋活動</p>
+    </div>
+    <div class="appcis">
+    <a href="http://mobile.udn.com/iae/" target="_blank"><img src="img/auto.png"></a>
+    <p>經濟日報‧自動化工業展</p>
+    </div>
+    <div class="appcis">
+    <a href="http://mobile.udn.com/where/" target="_blank"><img src="img/goose_512.png"></a>
+    <p>去哪鵝</p>
+    </div>
+    <div class="appcis">
+    <a href="http://mobile.udn.com/commuter/" target="_blank"><img src="img/metro_icon_1024.png"></a>
+    <p>搭車吧，台北</p>
+    </div>
+    <div class="appcis">
+    <a href="http://mobile.udn.com/ujob/" target="_blank"><img src="img/job_icon_512.png"></a>
+    <p>有工作</p>
+    </div>
+    </div>
+</div>
+<!--策略三-->
+<div class="item2">
+<div class="icon"><img src="img/price.svg" width="100%"></div>
+      <h1>有價內容</h1>
+      <h2>報系行動發展三大策略之三</h2>
+      <p>針對報系內提供有價值內容的行動服務，如udn 讀小說、udn 讀書吧、全民財經檢定+、全民財經詞彙、udn 原版報紙，建立統一內容市集平台及行動支付方式，方便讀者群聚，創造大 UDN 行動市集實力</p>
+    <div class="bigappcis">
+    <div class="appcis">
+    <a href="http://mobile.udn.com/novel/" target="_blank"><img src="img/novel_icon_1024.png"></a>
+    <p>udn 讀小說</p>
+    </div>
+    <div class="appcis">
+    <a href="http://mobile.udn.com/reading/" target="_blank"><img src="img/reading.png"></a>
+    <p>udn 讀書吧</p>
+    </div>
+    <div class="appcis">
+    <a href="http://mobile.udn.com/geft/" target="_blank"><img src="img/exam_icon_512.png"></a>
+    <p>全民財經檢定+</p>
+    </div>
+    <div class="appcis">
+    <a href="http://mobile.udn.com/ewords/" target="_blank"><img src="img/ewords.png"></a>
+    <p>全民財經詞彙</p>
+    </div>
+    <div class="appcis">
+    <a href="http://mobile.udn.com/paper/" target="_blank"><img src="img/newspaper_icon_512.png"></a>
+    <p>udn 原版報紙</p>
+    </div>
+    </div>
+    </div>
+    
+</div>
+<a id="3Page"></a>
+</div>
+<!--3原力結束-->
+
+<!--腦力測試開始-->
+<div id="box3" class=" wow fadeIn" data-wow-duration="2s">
+<div class="icon"><img src="img/brain.svg" width="100%"></div>
+<div style="text-align:center"><h1>行動腦力測試</h1></div>
+<div id="owl">
+<!--問題一-->
+    <div class="item3">
+      <div class="issue_icon">Q1</div>
+      <div class="issue_title">以下何者為報系行動發展三大策略？</div>
+      <div class="options">
+      <ul>
+        <li><a href="javascript:unhide('text1')">媒體核心</a></li>
+        <li><a href="javascript:unhide('text2')">虛實整合</a></li>
+        <li><a href="javascript:unhide('text3')">有價內容</a></li>
+        <li><a href="javascript:unhide('text4')">以上皆是</a></li>
+      </ul>
+      </div>
+
+      <div id="text1" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+      <div id="text2" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+      <div id="text3" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+      <div id="text4" class="hidden"><div class="answer_correct">答對了! 報系行動發展3大策略包含媒體、虛實整合、有價內容。</div></div>
+	</div>
+<!--問題二-->
+    <div class="item3">
+      <div class="issue_icon">Q2</div>
+      <div class="issue_title"> 報系行動發展永續經營的核心為？</div>
+      <div class="options">
+        <ul>
+          <li><a href="javascript:unhide('text5')">遊戲</a></li>
+          <li><a href="javascript:unhide('text6')">媒體</a></li>
+          <li><a href="javascript:unhide('text7')">動畫</a></li>
+          <li><a href="javascript:unhide('text8')">電子商務</a></li>
+        </ul>
+      </div>
+
+      <div id="text5" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+      <div id="text6" class="hidden"><div class="answer_correct">答對了! 媒體為報系行動發展永續經營的核心。</div></div>
+      <div id="text7" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+      <div id="text8" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+
+    </div>
+<!--問題三-->
+    <div class="item3">
+      <div class="issue_icon">Q3</div><div class="issue_title">因吉卜力展而引起熱烈迴響的udn 瘋活動App屬於哪種行動策略？</div>
+      <div class="options">
+        <ul>
+          <li><a href="javascript:unhide('text9')">虛實整合</a></li>
+          <li><a href="javascript:unhide('text10')">媒體</a></li>
+          <li><a href="javascript:unhide('text11')">有價內容</a></li>
+          <li><a href="javascript:unhide('text12')">電子商務</a></li>
+        </ul>
+      </div>
+      <div id="text9" class="hidden"><div class="answer_correct">答對了! udn 瘋活動App屬於行動發展策略的虛實整合。</div></div>
+      <div id="text10" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+      <div id="text11" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+      <div id="text12" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+    </div>
+<!--問題四-->
+    <div class="item3">
+      <div class="issue_icon">Q4</div>
+      <div class="issue_title">以下何者屬於聯合報集團內有價商品App？</div>
+      <div class="options">
+        <ul>
+          <li><a href="javascript:unhide('text13')">搭車吧，台北</a></li>
+          <li><a href="javascript:unhide('text14')">udn News</a></li>
+          <li><a href="javascript:unhide('text15')">udn 讀小說</a></li>
+          <li><a href="javascript:unhide('text16')">去哪鵝</a></li>
+        </ul>
+      </div>
+
+      <div id="text13" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+      <div id="text14" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+      <div id="text15" class="hidden"><div class="answer_correct">答對了! udn 讀小說屬於聯合報集團內的有價商品App。</div></div>
+      <div id="text16" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+
+    </div>
+<!--問題五-->
+    <div class="item3">
+      <div class="issue_icon">Q5</div>
+      <div class="issue_title">行動服務部在今年7月正式更名為？</div>
+      <div class="options">
+        <ul>
+          <li><a href="javascript:unhide('text17')">行動發展部</a></li>
+          <li><a href="javascript:unhide('text18')">產品開發部</a></li>
+          <li><a href="javascript:unhide('text19')">裝置內容研發中心</a></li>
+          <li><a href="javascript:unhide('text20')">行動研發中心</a></li>
+        </ul>
+      </div>
+
+      <div id="text17" class="hidden"><div class="answer_correct">答對了! 行動服務部已經在7月正式更名為行動發展部。</div></div>
+      <div id="text18" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+      <div id="text19" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+      <div id="text20" class="hidden"><div class="answer_wrong">不是這個答案，請再想一下喔!</div></div>
+
+    </div>
+</div>
+</div>
+<!--腦力測試結束-->
+
+<!--體驗會開始--> 
+<a id="4Page"></a>
+<div id="box4" class=" wow fadeIn" data-wow-duration="2s">
+ <div class="icon"><img src="img/vr.svg" width="100%"></div>
+  <div class="item4">
+    <h1>新聞VR體驗會</h1>
+    <h2>行動發展部 邀你用最獨特視角觀看新聞現場</h2>
+    <article>
+      <img src="img/vr.png" width="100%">
+      <h4>8/12 (五)  11：30~16：00<br>
+      聯合報一樓大廳
+      </h4>
+    </article>
+<div class="smallbox wow zoomIn" data-wow-duration="1.5s">
+  <div class="intro" >
+  <h3>體驗新聞VR</h3><hr><p>透過 VR 在新聞媒體的應用，帶你走入新聞現場</p>
+  </div>
+    <div class="intro">
+  <h3>體驗9D體感椅</h3><hr><p>特別邀請台灣第一座 VR 雲霄飛車的合作廠商「方向數位科技」，帶你體驗娛樂相關的 VR 應用</p>
+  </div>
+  <div class="intro">
+  <h3>免費喝醒腦咖啡</h3><hr><p>充分了解報系行動發展三大策略了嗎？活動當天完成問答者，即可免費獲得30元醒腦咖啡乙杯，每人限領一杯，名額有限送完為止</p>
+  </div> 
+</div>       
+</div>
+</div>
+<!--體驗會結束-->
+
+<!--分享會開始--> 
+<a id="5Page"></a>
+<div id="box5" class=" wow fadeIn" data-wow-duration="2s">
+	<div class="icon"><img src="img/phone.svg" width="100%"></div>
+	<div class="item5">
+    <h1>行動趨勢分享會</h1>
+    <h2>三大關鍵主題，全方位探究行動未來趨勢</h2>
+
+<div class="button"><a href="list.pdf" target="_blank" >名單公告</a></div>
+
+<div id="owl-demo2">
+<!--分享會一-->
+<div class="bigbox">
+	<div class="box">
+    <div class="box_right">
+    <h3>數位行銷，我的APP該怎麼推廣出去？</h3>
+    <p class="host">主講人：行動發展部行銷中心總監_謝松燕<br>時間及地點：8/26(五)14：00~15：30 / 201會議室</p>
+    <hr>
+    <p>【分享大綱】：<br>
+        1.讓我們了解行銷的範疇<br>
+        2.在推廣之前，了解你的服務要賣給誰<br>
+        3.說使用者有感覺的話，不要自說自話<br>
+        4.App推廣，有哪些利器<br>
+        【適合參加對象】：<br>
+        手上有行動服務希望更多人使用的單位同仁</p>
+    </div>
+    </div>
+</div>
+<!--分享會二-->
+<div class="bigbox">
+	<div class="box">
+ 	<div class="box_right">
+    <h3>行動APP的最新設計趨勢，什麼是 UI/UX？</h3>
+    <p class="host">主講人：行動發展部產品中心設計組長_黃郁潔<br>時間及地點：9/02(五)14：00~15：00 / 201會議室</p>
+    <hr>
+    <p>【分享大綱】：<br>
+        1.UI/UX和設計有甚麼不同?<br>
+        2.使用者介面(User Interface)近年趨勢<br>
+        3.使用者經驗(User Experience)近年趨勢<br>
+        4.未來報社APP發展方向<br>
+        【適合參加對象】：<br>
+        對行動載具介面設計有興趣者 (數位單位主管、企劃、平面、網頁單位設計)</p>
+	</div>
+	</div>
+</div>
+<!--分享會三-->
+<div class="bigbox">
+    <div class="box">
+	<div class="box_right">
+	<h3>行動APP中的付費機制，對報系商業模式發展的應用</h3>
+	<p class="host">主講人：行動發展部產品中心經理_蔡美玉<br>時間及地點：9/09(五)14：00~15：00 / 201會議室</p>
+	<hr>
+	<p>【分享大綱】：<br>
+        1.App 行動產品市場觀察<br>
+        2.App 付費機制介紹<br>
+        3.商業模式與案例<br>
+        4.未來報系發展的可能性<br>
+        【適合參加對象】：<br>有機會或正在營運數位產品的單位主管、企畫，正在尋找內容多元營收出路的主管、企畫</p>
+	</div>
+    </div>
+    </div>
+</div>
+
+</div>
+</div>
+<!--分享會結束--> 
+
+</body>
+</html>

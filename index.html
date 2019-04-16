@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="utf-8">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1" name="viewport">
+	<title>Hsuan</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="sidenav" id="mySidenav">
+		<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a> 
+		<a href="index.html" style="color:black">作品</a> 
+		<a href="about.html">關於我</a> 
+		<a href="#">履歷</a>
+	</div>
+	<div id="menu">
+		<span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+	</div>
+	<header>
+		<div class="name">
+			<a href="index.html"><img alt="" src="img/avatar.jpg" width="100%">YuHsuanWang</a>
+		</div>
+		<div class="nav">
+			<div class="nav1"><a href="index.html" style="color:black">作品</a></div>
+			<div class="nav2"><a href="about.html">關於我</a></div>
+			<div class="nav3"><a href="#">履歷</a></div>
+		</div>
+	</header>
+
+	<div id="contain">
+		<div class="row">
+			<div class="box">
+				<img alt="" src="img/index/app_whale.png" width="100%"> 
+				<a href="jin.html">
+				<div class="on">
+					<h1>一刻鯨選 App</h1>
+					<p>好知識就在耳邊</p>
+				</div>
+				</a>
+			</div>
+			<div class="box">
+				<img alt="" src="img/index/app_shopping.png" width="100%"> 
+				<a href="shopping.html">
+				<div class="on">
+					<h1>udn買東西 App</h1>
+					<p>最懂你的購物網站</p>
+				</div>
+				</a>
+			</div>
+			<div class="box">
+				<img alt="" src="img/index/app_story.png" width="100%"> 
+				<a href="story.html">
+				<div class="on">
+					<h1>讀創故事 App</h1>
+					<p>自由創作 自在閱讀</p>
+				</div>
+				</a>
+			</div>
+			<div class="box">
+				<img alt="" src="img/index/app_uevent.png" width="100%"> 
+				<a href="uevent.html">
+				<div class="on">
+					<h1>udn瘋活動 App</h1>
+					<p>展覽資訊 展場互動</p>
+				</div>
+				</a>
+			</div>
+			<div class="box">
+				<img alt="" src="img/index/web_jin.png" width="100%"> 
+				<a href="jin_web.html">
+				<div class="on">
+					<h1>一刻鯨選 官方網站</h1>
+					<p>好知識就在耳邊</p>
+				</div>
+				</a>
+			</div>
+			<div class="box">
+				<img alt="" src="img/index/web_active.png" width="100%"> 
+				<a href="#"></a>
+			</div>
+		</div>
+	</div>
+
+	<!--drawer-->
+	<script>
+	   function openNav() {
+	       document.getElementById("mySidenav").style.width = "250px";
+	   }
+	       
+	   function closeNav() {
+	       document.getElementById("mySidenav").style.width = "0";
+	   }
+	</script>
+</body>
+</html>
